@@ -13,6 +13,7 @@
 		1050358E2A6BD4CF007236E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1050358C2A6BD4CF007236E6 /* Main.storyboard */; };
 		105035902A6BD4D1007236E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1050358F2A6BD4D1007236E6 /* Assets.xcassets */; };
 		105035932A6BD4D1007236E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105035912A6BD4D1007236E6 /* LaunchScreen.storyboard */; };
+		1050359C2A6BD543007236E6 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 1050359B2A6BD543007236E6 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1050359C2A6BD543007236E6 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = FeatureTest;
+			packageProductDependencies = (
+				1050359B2A6BD543007236E6 /* SnapKit-Dynamic */,
+			);
 			productName = FeatureTest;
 			productReference = 105035832A6BD4CF007236E6 /* FeatureTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 1050357A2A6BD4CF007236E6;
+			packageReferences = (
+				1050359A2A6BD543007236E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 105035842A6BD4CF007236E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1050359A2A6BD543007236E6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1050359B2A6BD543007236E6 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1050359A2A6BD543007236E6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1050357B2A6BD4CF007236E6 /* Project object */;
 }
